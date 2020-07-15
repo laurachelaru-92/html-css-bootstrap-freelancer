@@ -30,28 +30,23 @@
   background-color: red;
 }
 
-.lc_portfolio {
-  height: 150px;
+.lc_colored_boxes {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
 }
 
-.lc_colored_boxes > div {
+.lc_colored_boxes > div:not(:first-child) {
   height: 300px;
   background-color: pink;
+  border: 1px solid red;
   line-height: 300px;
 }
 
 .lc_about {
   background-color: aqua;
-  height: 400px;
-  position: relative;
-}
-
-.lc_about_content {
-  width: 80%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .lc_form {
