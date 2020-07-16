@@ -2,56 +2,70 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootsrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Bootsrap Freelancer</title>
   </head>
   <body>
-  <div class="container-fluid">
-      <!-- Navbar -->
     <header>
-      <nav class="row lc_nav">
-          <div class="col-xs-5 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-md-5 col-md-offset-2">
-            <a class="color-white" href="#">START</a>
+      <!-- Navbar -->
+      <nav class="lc_nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-9 col-sm-6 col-md-6 col-lg-6">
+              <a class="color-white bold" href="#">START BOOTSTRAP</a>
+            </div>
+            <div class="hidden-xs col-sm-6 col-md-6 visible-sm visible-md visible-lg col-lg-6">
+              <ul class="list-inline pull-right bold">
+                <li><a href="#" class="color-white">PORTFOLIO</a></li>
+                <li><a href="#" class="color-white">ABOUT</a></li>
+                <li><a href="#" class="color-white">CONTACT</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-3 visible-xs text-right">
+              <a class="color-white" href="#"><i class="fas fa-bars"></i></a>
+            </div>
           </div>
-          <div class="col-sm-4 hidden-xs visible-sm visible-md col-md-5">
-            <ul class="list-inline pull-right">
-              <li><a href="#" class="color-white">PORTFOLIO</a></li>
-              <li><a href="#" class="color-white">ABOUT</a></li>
-              <li><a href="#" class="color-white">CONTACT</a></li>
-            </ul>
-          </div>
-          <div class="col-xs-5 visible-xs hidden-sm text-right hidden-md">
-            <a class="color-white" href="#">Bars</a>
-          </div>
+        </div>
       </nav>
       <!-- / navbar -->
       <!-- Jumbotron -->
-      <div class="row lc_jumbotron">
-        <div class="lc_jumbotron_content">
-          <div class="lc_jumbotron_img"></div>
-          <h1>START BOOTSTRAP</h1>
-          <p>hr stellina hr</p>
-          <p>lorem lorem lorem</p>
+      <div class="lc_jumbotron pad_topbottom_50">
+        <div class="container">
+          <div class="row">
+            <div class="lc_jumbotron_content text-center col-xs-12">
+              <img src="img/jumbotron-img.svg" alt="avatar" class="img-responsive center-block">
+              <h1 class="bold">START BOOTSTRAP</h1>
+              <div class="cornicetta text-center"><hr><i class="fas fa-star"></i><hr></div>
+              <p>Graphic Artist - Web Designer - Illustrator</p>
+            </div>
+          </div>
         </div>
       </div>
       <!-- / jumbotron -->
     </header>
     <!-- Main -->
     <main>
-      <section class="row lc_colored_boxes text-center">
-        <div class="lc_portfolio col-xs-12 col-sm-12 col-md-12">
-          <h2>PORTFOLIO</h2>
-          <p>hr stellina hr</p>
+      <section class="lc_colored_boxes text-center pad_topbottom_50">
+        <div class="container">
+          <div class="row">
+            <div class="lc_portfolio col-xs-12 col-sm-12 col-md-12">
+              <h2>PORTFOLIO</h2>
+              <div><span><hr></span><i class="fas fa-star"></i><span><hr></span></div>
+            </div>
+          </div>
+          <div class="row boxes">
+            <div class="col-xs-12 col-sm-6 col-md-4">CASA</div>
+            <div class="col-xs-12 col-sm-6 col-md-4">TORTA</div>
+            <div class="col-xs-12 col-sm-6 col-md-4">CIRCO</div>
+            <div class="col-xs-12 col-sm-6 col-md-4">JOYSTICK</div>
+            <div class="col-xs-12 col-sm-6 col-md-4">CASSAFORTE</div>
+            <div class="col-xs-12 col-sm-6 col-md-4">SOMMERGIBILE</div>
+          </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">CASA</div>
-        <div class="col-xs-12 col-sm-6 col-md-4">TORTA</div>
-        <div class="col-xs-12 col-sm-6 col-md-4">CIRCO</div>
-        <div class="col-xs-12 col-sm-6 col-md-4">JOYSTICK</div>
-        <div class="col-xs-12 col-sm-6 col-md-4">CASSAFORTE</div>
-        <div class="col-xs-12 col-sm-6 col-md-4">SOMMERGIBILE</div>
       </section>
       <section class="row lc_about">
         <div class="lc_about_content text-center col-xs-10 col-xs-offset-1">
@@ -105,7 +119,6 @@
       </div>
     </footer>
     <!-- / footer -->
-  </div>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>

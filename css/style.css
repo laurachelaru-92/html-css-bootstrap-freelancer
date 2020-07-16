@@ -1,42 +1,115 @@
-.lc_nav {
-  background-color: darkblue;
-  height: 50px;
-  line-height: 50px;
+/* Generale */
+* {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.lc_nav a {
+html {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+  font-size: 12px;
+}
+}
+@media screen and (max-width: 767px) {
+  html {
+  font-size: 10px;
+}
+
+.lc_jumbotron p {
+  font-size: 4rem;
+}
+}
+
+.cornicetta {
+  width: 60%;
+  max-width: 95%;
+  margin: auto;
+}
+
+.cornicetta hr {
+  display: inline-block;
+  width: 100px;
+  max-width: 20%;
+  border: 10px solid inherit;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.cornicetta i {
+  font-size: 2rem;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+/* / generale */
+
+.pad_topbottom_50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.lc_nav {
+  background-color: #2C3E50;
+  height: 100px;
+  line-height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav ul li {
+  font-size: 1.2rem;
+}
+
+nav i {
+  padding: 10px 20px;
+  color: grey;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  font-size: 2rem;
+}
+
+nav i:hover {
+  background-color: #1ABC9C;
+  border: 1px solid #1ABC9C;
   color: #fff;
 }
 
 .lc_jumbotron {
-  height: 350px;
-  background-color: aqua;
-  position: relative;
+  margin-top: 100px;
+  background-color: #1ABC9C;
+  color: #fff;
 }
 
-.lc_jumbotron_content {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.lc_jumbotron img {
+  max-height: 250px;
 }
 
-.lc_jumbotron_img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: auto;
-  background-color: red;
+.lc_jumbotron h1 {
+  font-size: 4rem;
+}
+
+.lc_jumbotron p {
+  font-size: 1rem;
 }
 
 .lc_colored_boxes {
-  padding-top: 20px;
-  padding-bottom: 20px;
   background-color: #fff;
 }
 
-.lc_colored_boxes > div:not(:first-child) {
+.lc_colored_boxes .container .boxes > div {
   height: 300px;
   background-color: pink;
   border: 1px solid red;
@@ -44,7 +117,7 @@
 }
 
 .lc_about {
-  background-color: aqua;
+  background-color: #1ABC9C;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -69,12 +142,12 @@
 .lc_main_footer {
   padding: 30px 10px;
   color: #fff;
-  background-color: blue;
+  background-color: #3A546D;
 }
 
 .lc_copyright {
   height: 100px;
   line-height: 100px;
   color: #fff;
-  background-color: darkblue;
+  background-color: #2C3E50;
 }
