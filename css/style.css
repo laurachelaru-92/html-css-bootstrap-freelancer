@@ -8,7 +8,8 @@ html {
 }
 
 .lc_container_small {
-  width: 70%;
+  width: 60%;
+  margin: auto;
 }
 
 .pad_topbottom_50 {
@@ -110,12 +111,14 @@ nav i:hover {
 /* fine header */
 
 /* Main */
+/* Sezione 6-boxes */
 .lc_colored_boxes {
   background-color: #fff;
 }
 
-.lc_portfolio h2 {
+h2 {
   font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .lc_colored_boxes .cornicetta > div {
@@ -157,13 +160,37 @@ nav i:hover {
 .boxes > div:hover .overlay {
   display: block;
 }
+/* fine sezione 6-boxes */
 
+/* Sezione about */
 .lc_about {
+  width: 100%;
   background-color: #1ABC9C;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  color: #fff;
 }
 
+.lc_about p {
+  font-size: 1.3rem;
+}
+
+.lc_about button {
+  background-color: #1ABC9C;
+  color: #fff;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.lc_about button i {
+  padding-right: 7px;
+}
+
+.lc_about button:hover {
+  color: #2C3E50;
+  background-color: #fff;
+}
+/* fine sezione about */
+
+/* Sezione form */
 .lc_form {
   height: 500px;
   position: relative;
@@ -180,6 +207,7 @@ nav i:hover {
 .lc_form_content .lc_message {
   margin-bottom: 30px;
 }
+/* fine sezione form */
 /* fine main */
 
 /* Footer*/
@@ -206,6 +234,14 @@ nav i:hover {
 @media screen and (max-width: 767px) {
   html {
   font-size: 10px;
+}
+
+.lc_container_small {
+  width: 90%;
+}
+
+.lc_about p {
+  font-size: 1.7rem;
 }
 }
 /* fine MEDIA QUERIES */
