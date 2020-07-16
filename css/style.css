@@ -7,32 +7,30 @@ html {
   font-size: 16px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  html {
-  font-size: 12px;
-}
-}
-@media screen and (max-width: 767px) {
-  html {
-  font-size: 10px;
+.lc_container_small {
+  width: 70%;
 }
 
-.lc_jumbotron p {
-  font-size: 4rem;
+.pad_topbottom_50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
+
+.bold {
+  font-weight: 700;
 }
 
 .cornicetta {
   width: 60%;
   max-width: 95%;
-  margin: auto;
+  margin: 20px auto;
 }
 
-.cornicetta hr {
+.cornicetta div {
   display: inline-block;
   width: 100px;
   max-width: 20%;
-  border: 10px solid inherit;
+  border: 2px solid #fff;
   border-radius: 3px;
   vertical-align: middle;
 }
@@ -44,15 +42,8 @@ html {
 }
 /* / generale */
 
-.pad_topbottom_50 {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.bold {
-  font-weight: 700;
-}
-
+/* Header */
+/* Barra di navigazione */
 .lc_nav {
   background-color: #2C3E50;
   height: 100px;
@@ -65,12 +56,21 @@ html {
   font-size: 1.8rem;
 }
 
+nav ul li {
+  font-size: 1.2rem;
+}
+
 nav a {
   color: #fff;
 }
 
-nav ul li {
-  font-size: 1.2rem;
+nav a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  color: #1ABC9C;
 }
 
 nav i {
@@ -86,7 +86,9 @@ nav i:hover {
   border: 1px solid #1ABC9C;
   color: #fff;
 }
+/* fine barra di navigazione */
 
+/* Jumbotron */
 .lc_jumbotron {
   margin-top: 100px;
   background-color: #1ABC9C;
@@ -102,18 +104,58 @@ nav i:hover {
 }
 
 .lc_jumbotron p {
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
+/* fine Jumbotron */
+/* fine header */
 
+/* Main */
 .lc_colored_boxes {
   background-color: #fff;
 }
 
-.lc_colored_boxes .container .boxes > div {
-  height: 300px;
-  background-color: pink;
-  border: 1px solid red;
-  line-height: 300px;
+.lc_portfolio h2 {
+  font-size: 2.5rem;
+}
+
+.lc_colored_boxes .cornicetta > div {
+  border-color: #2C3E50;
+}
+
+.boxes > div {
+  margin-top: 30px;
+  position: relative;
+}
+
+.boxes > div img {
+  border-radius: 10px;
+}
+
+.boxes > div > a {
+}
+
+.boxes .overlay {
+  display: none;
+  width: calc(100% - 30px);
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  background-color: rgba(26, 188, 156,0.9);
+}
+
+.boxes .overlay i {
+  color: #fff;
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.boxes > div:hover .overlay {
+  display: block;
 }
 
 .lc_about {
@@ -138,7 +180,9 @@ nav i:hover {
 .lc_form_content .lc_message {
   margin-bottom: 30px;
 }
+/* fine main */
 
+/* Footer*/
 .lc_main_footer {
   padding: 30px 10px;
   color: #fff;
@@ -151,3 +195,17 @@ nav i:hover {
   color: #fff;
   background-color: #2C3E50;
 }
+/* fine footer */
+
+/* MEDIA QUERIES  */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+  font-size: 12px;
+}
+}
+@media screen and (max-width: 767px) {
+  html {
+  font-size: 10px;
+}
+}
+/* fine MEDIA QUERIES */
