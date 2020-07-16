@@ -121,7 +121,8 @@ h2 {
   font-weight: bold;
 }
 
-.lc_colored_boxes .cornicetta > div {
+.lc_colored_boxes .cornicetta > div,
+.lc_form .cornicetta > div {
   border-color: #2C3E50;
 }
 
@@ -132,9 +133,6 @@ h2 {
 
 .boxes > div img {
   border-radius: 10px;
-}
-
-.boxes > div > a {
 }
 
 .boxes .overlay {
@@ -164,7 +162,6 @@ h2 {
 
 /* Sezione about */
 .lc_about {
-  width: 100%;
   background-color: #1ABC9C;
   color: #fff;
 }
@@ -177,7 +174,7 @@ h2 {
   background-color: #1ABC9C;
   color: #fff;
   margin-top: 15px;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .lc_about button i {
@@ -191,37 +188,40 @@ h2 {
 /* fine sezione about */
 
 /* Sezione form */
-.lc_form {
-  height: 500px;
-  position: relative;
+.lc_form .cornicetta > div {
+  border-color:
 }
 
-.lc_form_content {
-  width: 70%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.lc_form form input,
+.lc_form form textarea {
+  border: 0;
+  box-shadow: none;
+  border-bottom: 1px solid lightgrey;
 }
 
-.lc_form_content .lc_message {
-  margin-bottom: 30px;
+.lc_form button {
+  margin-top: 20px;
+  padding: 15px 20px;
+  background-color: #1ABC9C;
+}
+
+.lc_form button:hover {
+  background-color: #12876f;
 }
 /* fine sezione form */
 /* fine main */
 
 /* Footer*/
 .lc_main_footer {
-  padding: 30px 10px;
   color: #fff;
-  background-color: #3A546D;
+  background-color: #2C3E50;
 }
 
-.lc_copyright {
+.lc_bottom_footer {
   height: 100px;
   line-height: 100px;
   color: #fff;
-  background-color: #2C3E50;
+  background-color: #1A252F;
 }
 /* fine footer */
 
