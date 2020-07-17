@@ -194,7 +194,7 @@ h2 {
 }
 
 button,
-.lc_icons i,
+.lc_icons li,
 .lc_about_freelancer a {
   transition: 0.4s;
 }
@@ -213,7 +213,12 @@ button,
   padding: 20px 0 40px 0;
   margin-bottom: 20px;
   font-size: 1.5rem;
-  color: black;
+}
+
+.lc_form form input:focus,
+.lc_form form textarea:focus {
+  box-shadow: none;
+  border-bottom: 1px solid lightgrey;
 }
 
 .lc_form button {
@@ -252,15 +257,24 @@ button,
   padding: 0 40px;
 }
 
+.lc_icons ul {
+  margin: 0;
+  list-style: none;
+}
+
+.lc_icons li {
+  display: inline-block;
+}
+
 .lc_icons a {
   display: inline-block;
+  padding: 10px;
   width: 50px;
   height: 50px;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 10px;
   border-radius: 50%;
   border: 2px solid #fff;
+  text-decoration: none;
+  font-size: 20px;
   color: #fff;
 }
 
