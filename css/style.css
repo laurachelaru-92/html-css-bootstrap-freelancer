@@ -257,9 +257,9 @@ button,
   padding: 0 40px;
 }
 
-.lc_icons ul {
-  margin: 0;
+ul.lc_icons {
   list-style: none;
+  padding: 0;
 }
 
 .lc_icons li {
