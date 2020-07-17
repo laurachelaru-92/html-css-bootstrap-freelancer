@@ -65,26 +65,31 @@ nav a {
   color: #fff;
 }
 
-nav a:hover {
-  text-decoration: none;
+nav .lc_logo a:hover {
   color: #fff;
+  text-decoration: none;
 }
 
 nav ul li a:hover {
   color: #1ABC9C;
+  text-decoration: none;
 }
 
-nav i {
-  padding: 10px 20px;
-  color: grey;
-  border: 1px solid #fff;
-  border-radius: 3px;
-  font-size: 2rem;
+nav .lc_menu_xs i {
+  padding-left: 5px;
 }
 
-nav i:hover {
+nav .lc_menu_xs a {
   background-color: #1ABC9C;
-  border: 1px solid #1ABC9C;
+  padding: 15px 20px;
+  border-radius: 7px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav .lc_menu_xs a:hover {
+  background-color: #12876f;
+  text-decoration: none;
   color: #fff;
 }
 /* fine barra di navigazione */
@@ -136,19 +141,21 @@ h2 {
 }
 
 .boxes .overlay {
-  display: none;
   width: calc(100% - 30px);
   height: 100%;
   border-radius: 10px;
   position: absolute;
   top: 0;
   left: 15px;
-  background-color: rgba(26, 188, 156,0.9);
+  background-color: rgb(26, 188, 156);
+  opacity: 0;
+  transition: 0.5s ease;
+  cursor: pointer;
 }
 
 .boxes .overlay i {
   color: #fff;
-  font-size: 60px;
+  font-size: 70px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -156,7 +163,7 @@ h2 {
 }
 
 .boxes > div:hover .overlay {
-  display: block;
+  opacity: 0.9;
 }
 /* fine sezione 6-boxes */
 
@@ -185,6 +192,12 @@ h2 {
   color: #2C3E50;
   background-color: #fff;
 }
+
+button,
+.lc_icons i,
+.lc_about_freelancer a {
+  transition: 0.4s;
+}
 /* fine sezione about */
 
 /* Sezione form */
@@ -205,8 +218,11 @@ h2 {
 
 .lc_form button {
   margin-top: 20px;
-  padding: 15px 20px;
+  padding: 20px 25px;
   background-color: #1ABC9C;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
 }
 
 .lc_form button:hover {
@@ -269,6 +285,10 @@ h2 {
   color: #fff;
   background-color: #1A252F;
 }
+
+.lc_bottom_footer p {
+  margin: 0;
+}
 /* fine footer */
 
 /* MEDIA QUERIES  */
@@ -284,6 +304,10 @@ h2 {
 
 .lc_container_small {
   width: 90%;
+}
+
+.boxes .overlay i {
+  font-size: 150px;
 }
 
 .lc_about p {
